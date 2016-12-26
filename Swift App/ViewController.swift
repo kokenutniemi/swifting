@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by kokenutniemi on 25/12/2016.
-//  Copyright © 2016 kokenutniemi. All rights reserved.
+//  Copyright © 2016 kokenutniemi. All rights reserved..
 //
 
 import UIKit
@@ -12,11 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        theLabel.text = "Moi moi"
-        print("Button tapped")
+        theLabel.text = "\(Double(text1.text!)! * Double(text2.text!)!)"
         
     }
     

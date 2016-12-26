@@ -34,16 +34,42 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNI-Vx-Lpa"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FB1-ZR-iAu">
+                                <rect key="frame" x="139" y="150" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="70C-uy-qSD"/>
+                                    <constraint firstAttribute="width" constant="97" id="dOY-Hv-SOv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GEU-iJ-Rtc">
+                                <rect key="frame" x="139" y="195" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="fgi-GX-4hx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="FB1-ZR-iAu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9qs-hp-LEg"/>
+                            <constraint firstItem="GEU-iJ-Rtc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BT4-IY-4Ks"/>
                             <constraint firstItem="gPu-o3-2hu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="LPT-Vb-MVz"/>
+                            <constraint firstItem="GEU-iJ-Rtc" firstAttribute="top" secondItem="FB1-ZR-iAu" secondAttribute="bottom" constant="15" id="QzZ-ed-eXo"/>
+                            <constraint firstItem="FB1-ZR-iAu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T7t-Zg-tFR"/>
                             <constraint firstItem="gPu-o3-2hu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bFB-Jx-OEZ"/>
                             <constraint firstItem="adE-J0-La1" firstAttribute="top" secondItem="gPu-o3-2hu" secondAttribute="bottom" constant="9" id="gfM-BI-pEb"/>
                             <constraint firstItem="adE-J0-La1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h0I-fE-jB4"/>
+                            <constraint firstItem="FB1-ZR-iAu" firstAttribute="top" secondItem="adE-J0-La1" secondAttribute="bottom" constant="20" id="lvZ-Sl-PbU"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="FB1-ZR-iAu" id="869-Jd-mGj"/>
+                        <outlet property="text2" destination="GEU-iJ-Rtc" id="NaR-x3-pAX"/>
                         <outlet property="theLabel" destination="gPu-o3-2hu" id="L1y-QU-MCw"/>
                     </connections>
                 </viewController>
